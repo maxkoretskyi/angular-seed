@@ -22,7 +22,12 @@
         packages: {
             app: {
                 main: './main.js',
-                defaultExtension: 'js'
+                defaultExtension: 'js',
+                meta: {
+                    '': {
+                        format: 'cjs'
+                    }
+                }
             },
             rxjs: {
                 defaultExtension: 'js'
