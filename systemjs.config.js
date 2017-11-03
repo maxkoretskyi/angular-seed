@@ -6,7 +6,8 @@
 
         map: {
             // maps plain `app` module to `app` package
-            app: 'app',
+            main: 'src/main.js',
+            app: 'src/app',
 
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -16,12 +17,12 @@
             '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
 
             // other libraries
-            'rxjs': 'npm:rxjs'
+            'rxjs': 'npm:rxjs',
+            'tslib': 'npm:tslib/tslib.js'
         },
 
         packages: {
-            app: {
-                main: './main.js',
+            'src/app': {
                 defaultExtension: 'js',
                 meta: {
                     '': {
