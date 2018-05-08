@@ -16,13 +16,13 @@
             '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
             '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
 
-            // other libraries
             'rxjs': 'npm:rxjs',
-            'tslib': 'npm:tslib/tslib.js'
+            'rxjs-compat': 'npm:rxjs-compat',
+            'rxjs/operators': 'npm:rxjs/operators',
         },
 
         packages: {
-            'src/app': {
+            'src': {
                 defaultExtension: 'js',
                 meta: {
                     '': {
@@ -30,9 +30,8 @@
                     }
                 }
             },
-            rxjs: {
-                defaultExtension: 'js'
-            }
+            'rxjs': {main: 'index.js', defaultExtension: 'js'},
+            'rxjs/operators': {main: 'index.js', defaultExtension: 'js'}
         }
     });
 })(this);
