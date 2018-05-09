@@ -1,3 +1,3 @@
 // import './simple-component';
-// import './child-component';
-import './view-query';
+import './nested-components';
+// import './view-query';
